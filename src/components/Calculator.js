@@ -58,17 +58,12 @@ class Calculator extends Component {
     }
   };
 
-  getScreenValue = () => {
-    // this.setState({ mathUtil:MathUtil});
-    this.state.mathUtil = MathUtil;
-    return this.state.second || this.state.first
-  };
-  getState = () => this.state;
+  getScreenValue = () => this.state.second || this.state.first;
 
   render() {
     return (
       <>
-        <Screen state={this.getState()} value={this.getScreenValue()} />
+        <Screen utilities={MathUtil} value={this.getScreenValue()} />
         <div style={{ display: "flex" }}> 
           <div style={{ width: 145 }} className='Calculator-Number-Section'>
             <Number value={0} onClick={this.handleNumberClick} />
