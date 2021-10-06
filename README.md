@@ -1,3 +1,17 @@
+## Project Link:
+https://rok862.github.io/CSCI39HomeWork-4/
+
+## How I deployed the project:
+- I used Github pages, nothing special here. 
+
+## Features and comments:
+- I used CSS to style components, and reduced duration of animated transitions on button hover state to 0.2 seconds--as per previous guidance.
+- I fixed a bug--which now contemplating on it, may have been intentional--which forced input/calculations to be parsed as integers. It rounded the values up or down, before and after calculations. 
+- I added new features such as Square Root, Qube Root, Pi, and a display for equations.
+- I added an on-button click sound to maintain the illusion--and perhaps enable the user to keep track of how many times a button was clicked if any.
+- I created new state values which parse down to components and manipulate UI. Some components enable the display to change the font size if the text has grown out of rect. 
+
+
 ## Assignment
 
 In this assignment you will start with a basic calculator and style it using `CSS`, `inline styles`, and `styled-components`.
