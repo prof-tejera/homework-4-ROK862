@@ -21,9 +21,7 @@ class Screen extends Component {
 
     const getEquation = () => {
       const value = mathUtil.GetPrintValue();
-      //mathUtil.Clear();
       return value;
-      //return `${first} ${operator} ${second}`;
     }
 
     const equation = <Equation value={getEquation()} />
