@@ -77,10 +77,11 @@ class Calculator extends Component {
             <Number value={8} onClick={this.handleNumberClick} />
             <Number value={9} onClick={this.handleNumberClick} />
           </div>
-          <div style={{ paddingLeft: 10 }} className='Calculator-Operator-Section'>
+          <div style={{ paddingLeft: 10, width: 72 }} className='Calculator-Operator-Section'>
             <Operator value="&#8730;" action="sq" onClick={this.handleOperatorClick} />
             <Operator value="&#8731;" action="qb" onClick={this.handleOperatorClick} />
             <Number value="&#960;" action='pi' onClick={this.handleNumberClick} />
+            <Number value="." onClick={this.handleNumberClick} />
           </div>
           <div style={{ paddingLeft: 10 }} className='Calculator-Operator-Section'>
             <Operator value="+" onClick={this.handleOperatorClick} />
