@@ -2,6 +2,7 @@
   "name": "react-styling-exercise",
   "version": "1.0.0",
   "private": true,
+  "homepage":"https://prof-tejera.github.io/homework-4-ROK862/",
   "dependencies": {
     "howler": "^2.2.3",
     "node-fetch": "^3.0.0",
