@@ -19,12 +19,11 @@ const Container = styled.div`
 
 class Screen extends Component {
   render() {
+    // distructure top level utilities component from props.
     const { utilities:mathUtil } = this.props;
 
-    const getEquation = () => {
-      const value = mathUtil.GetPrintValue();
-      return value;
-    }
+    // Get latest printable value to display on screen.
+    const getEquation = () => mathUtil.GetPrintValue();
 
     const equation = <Equation value={getEquation()} />
 
@@ -33,8 +32,9 @@ class Screen extends Component {
 }
 
 
-
+// Declare PropTypes.
 Screen.propTypes = {
+  utilities: PropTypes.object,
   action: PropTypes.string,
   value: PropTypes.number,
   onClick: PropTypes.func

@@ -21,13 +21,16 @@ const Container = styled.div`
 
 class Number extends Component {
  
+  // Togle onclick sound.
   togglePlay = () => {
     const sound = new Howl({src:audio});
     sound.play();
   }
 
   render() {
+    // Distructure action from props.
     const { action } = this.props;
+    // Process action, see if we are asked to get a pi action.
     const value = (action !== 'pi') ? this.props.value : 3.141592653589793238;
 
     return (
@@ -38,6 +41,7 @@ class Number extends Component {
   }
 }
 
+// Declare PropTypes.
 Number.propTypes = {
   action: PropTypes.string,
   value: PropTypes.number,

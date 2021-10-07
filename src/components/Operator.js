@@ -24,7 +24,9 @@ class Operator extends Component {
   }
 
   render() {
+    // Distructure action from props.
     const { action } = this.props;
+    // Check if we have another action parsed through, if so, replace value with action.
     const value = (action) ? action : this.props.value;
     
     return (
@@ -35,6 +37,7 @@ class Operator extends Component {
   }
 }
 
+// Declare PropTypes.
 Operator.propTypes = {
   action: PropTypes.string,
   value: PropTypes.number,
