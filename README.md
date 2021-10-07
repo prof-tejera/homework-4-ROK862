@@ -1,5 +1,5 @@
 ## Project Link:
-https://rok862.github.io/CSCI39HomeWork-4/
+https://prof-tejera.github.io/homework-4-ROK862/
 
 ## How I deployed the project:
 - I used Github pages, nothing special here. 
