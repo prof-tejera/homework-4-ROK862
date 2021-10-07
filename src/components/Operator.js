@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import audio from '../../src/audio/onclick_sound.mp3';
 import {Howl} from 'howler';
@@ -33,5 +34,11 @@ class Operator extends Component {
     );
   }
 }
+
+Operator.propTypes = {
+  action: PropTypes.string,
+  value: PropTypes.number,
+  onClick: PropTypes.func
+};
 
 export default Operator;

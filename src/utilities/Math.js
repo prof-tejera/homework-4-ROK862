@@ -34,5 +34,6 @@ module.exports.GetPrintValue = () => {
             opsIndex++;
         }
     });
+    
     return evalString;
 }
